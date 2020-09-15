@@ -628,6 +628,12 @@ anchoreEnterpriseFeeds:
   tolerations: []
   affinity: {}
 
+# Pod configuration for the helm post-install-hook feeds upgrade Job
+anchoreEnterpriseFeedsUpgradeJob:
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+
 # Configure the Anchore Enterprise role based access control component.
 # This component consists of 2 containers that run as side-cars in the anchore engine api pod.
 anchoreEnterpriseRbac:
